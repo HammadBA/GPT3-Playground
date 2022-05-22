@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/GPT3-Playground/static/css/main.d4be63da.css",
+    "main.js": "/GPT3-Playground/static/js/main.af4b7e58.js",
+    "index.html": "/GPT3-Playground/index.html",
+    "main.d4be63da.css.map": "/GPT3-Playground/static/css/main.d4be63da.css.map",
+    "main.af4b7e58.js.map": "/GPT3-Playground/static/js/main.af4b7e58.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4be63da.css",
+    "static/js/main.af4b7e58.js"
+  ]
+}
