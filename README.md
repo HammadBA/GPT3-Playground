@@ -2,10 +2,6 @@
 GPT3-Playground is an application to interact with multiple GPT AI models (GPT3.5 & GPT4 Access Coming Soon)<br/>
 Built Using OpenAI { https://openai.com/api/ }
 
-,  to use by selecting from the AI Engine box.
-Application further stores all the responses in memory, hence all responses remain when user leaves and refreshes site.
-<br>
-
 Use it here 💻 https://hammadba.github.io/GPT3-Playground
 
 ## Features
