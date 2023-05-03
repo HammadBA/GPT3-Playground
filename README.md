@@ -8,6 +8,7 @@ Use it here 💻 https://hammadba.github.io/GPT3-Playground
 * Users can type in a prompt and recieve an output from GPT-3 API
 * Users can select from various GPT Engine Models
 * Application stores conversation thread in memory, continue speaking to GPT after refresh and have old conversation saved
+* Input and use your Own API Key!
 
 ## Cloning Instructions:
 
