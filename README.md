@@ -1,10 +1,19 @@
 # App Description
-GPT3-Playground is an application interacting with GPT-3 AI model created by OpenAI { https://openai.com/api/ }
+GPT3-Playground is an application to interact with multiple GPT AI models (GPT3.5 & GPT4 Access Coming Soon)<br/>
+Built Using OpenAI { https://openai.com/api/ }
 
-In this application, users can type in a prompt and recieve an output from GPT-3 API, Users can select which GPT3 Model to use by selecting from the AI Engine box.
+,  to use by selecting from the AI Engine box.
 Application further stores all the responses in memory, hence all responses remain when user leaves and refreshes site.
+<br>
 
-# Cloning Instructions:
+Use it here 💻 https://hammadba.github.io/GPT3-Playground
+
+## Features
+* Users can type in a prompt and recieve an output from GPT-3 API
+* Users can select from various GPT Engine Models
+* Application stores conversation thread in memory, continue speaking to GPT after refresh and have old conversation saved
+
+## Cloning Instructions:
 
 1) Rename .env_sample file to .env
 
