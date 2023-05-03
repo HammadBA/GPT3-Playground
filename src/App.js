@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FetchCall } from "./Fetch";
+import { FetchCall } from "./Fetch.js";
 import "./Styles/index.css";
 
 export default function App() {
@@ -7,16 +7,18 @@ export default function App() {
   const prevData = window.localStorage.getItem("storedData");
   const [data, setData] = useState(JSON.parse(prevData) || []);
   const [query, setQuery] = useState("");
+  const [key, setKey] = useState("");
   const [engine, setEngine] = useState("Curie");
   const [search, setSearch] = useState(false);
   const [loading, setLoading] = useState(false);
-
+  // console.log(data);
   useEffect(() => {
     const fetchData = async () => {
       // When Generate Button is Pressed / Search is triggered
       if (search) {
         setLoading(true);
-        const response = await FetchCall(query, engine);
+        const response = await FetchCall(query, engine, key);
+
         const cardData = [
           {
             input: query,
@@ -33,7 +35,7 @@ export default function App() {
       }
     };
     fetchData();
-  }, [search, data, query, engine]);
+  }, [search, data, query, engine, key]);
 
   return (
     <div className="main">
@@ -64,6 +66,14 @@ export default function App() {
         <button type="button" onClick={() => setSearch(true)}>
           Generate
         </button>
+        <div className="ApiBox">
+          <label className="label">API KEY: </label>
+          <input
+            name="APIKEY"
+            placeholder="Your API Key Here"
+            onClick={(event) => setKey(event.target.value)}
+          ></input>
+        </div>
       </div>
 
       {/* Right Side */}
@@ -79,7 +89,7 @@ export default function App() {
 
         {/* Map each card and display info */}
         {data &&
-          data.map((card, i) => (
+          data.map((i, card) => (
             <div className="card" key={i}>
               <div className="row">
                 <div className="cardtitle">Prompt:</div>

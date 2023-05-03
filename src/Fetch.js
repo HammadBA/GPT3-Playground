@@ -1,7 +1,10 @@
-const API_KEY = process.env.REACT_APP_API_KEY;
+let API_KEY = process.env.REACT_APP_API_KEY;
 
 // Function calls on GPT3 API and returns the output response
-export async function FetchCall(query, engine) {
+export async function FetchCall(query, engine, key) {
+  if (key !== "") {
+    API_KEY = key;
+  }
   const settings = {
     prompt: query,
     temperature: 0.5,
@@ -22,12 +25,16 @@ export async function FetchCall(query, engine) {
     {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${API_KEY}`,
+        ContentType: "application/json",
+        Authorization: "Bearer " + API_KEY,
       },
       body: JSON.stringify(settings),
     }
   );
   const data = await res.json();
+  if (data.error) {
+    alert("Error: Too Many API Calls, Quota Limit Exceeded");
+  }
+  console.log(data);
   return data.choices[0].text;
 }
