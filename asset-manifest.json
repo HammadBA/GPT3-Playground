@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/GPT3-Playground/static/css/main.d4be63da.css",
-    "main.js": "/GPT3-Playground/static/js/main.15438f27.js",
+    "main.css": "/GPT3-Playground/static/css/main.d1e3b658.css",
+    "main.js": "/GPT3-Playground/static/js/main.ea0e2a8c.js",
     "index.html": "/GPT3-Playground/index.html",
-    "main.d4be63da.css.map": "/GPT3-Playground/static/css/main.d4be63da.css.map",
-    "main.15438f27.js.map": "/GPT3-Playground/static/js/main.15438f27.js.map"
+    "main.d1e3b658.css.map": "/GPT3-Playground/static/css/main.d1e3b658.css.map",
+    "main.ea0e2a8c.js.map": "/GPT3-Playground/static/js/main.ea0e2a8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4be63da.css",
-    "static/js/main.15438f27.js"
+    "static/css/main.d1e3b658.css",
+    "static/js/main.ea0e2a8c.js"
   ]
 }
